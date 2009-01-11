@@ -1,0 +1,10 @@
+--- cursedmenu-1.0.4/src/ActionLogger.cc~	2008-04-14 20:44:56.000000000 +0200
++++ cursedmenu-1.0.4/src/ActionLogger.cc	2009-01-11 01:41:42.883028758 +0100
+@@ -20,6 +20,7 @@
+  *
+  */
+ 
++#include <cstdlib>
+ #include <fstream>
+ #include <string>
+ #include <time.h>
