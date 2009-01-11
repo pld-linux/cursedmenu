@@ -9,7 +9,10 @@ Source0:	http://dl.sourceforge.net/cursedmenu/%{name}-%{version}.tar.bz2
 # Source0-md5:	31e9353ba603b95df3b742bfa3a0ed87
 Patch0:		%{name}-gcc43.patch
 URL:		http://cursedmenu.sourceforge.net/
+BuildRequires:	autoconf
+BuildRequires:	automake
 BuildRequires:	libstdc++-devel
+BuildRequires:	libtool
 BuildRequires:	ncurses-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
