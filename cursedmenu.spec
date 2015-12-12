@@ -2,7 +2,7 @@ Summary:	ncurses based menu system for character based sessions
 Summary(pl.UTF-8):	oparty o ncurses system menu dla sesji terminalowych
 Name:		cursedmenu
 Version:	1.0.4
-Release:	4
+Release:	5
 License:	GPL v3
 Group:		Applications
 Source0:	http://dl.sourceforge.net/cursedmenu/%{name}-%{version}.tar.bz2
