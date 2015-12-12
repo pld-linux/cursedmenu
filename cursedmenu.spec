@@ -2,12 +2,13 @@ Summary:	ncurses based menu system for character based sessions
 Summary(pl.UTF-8):	oparty o ncurses system menu dla sesji terminalowych
 Name:		cursedmenu
 Version:	1.0.4
-Release:	5
+Release:	6
 License:	GPL v3
 Group:		Applications
 Source0:	http://dl.sourceforge.net/cursedmenu/%{name}-%{version}.tar.bz2
 # Source0-md5:	31e9353ba603b95df3b742bfa3a0ed87
 Patch0:		%{name}-gcc43.patch
+Patch1:		%{name}-build.patch
 URL:		http://cursedmenu.sourceforge.net/
 BuildRequires:	autoconf
 BuildRequires:	automake
@@ -31,6 +32,7 @@ tekstowych, takich jak telnet, ssh czy rlogin.
 %prep
 %setup -q
 %patch0 -p1
+%patch1 -p1
 
 %build
 CPPFLAGS="%{rpmcflags} -I/usr/include/ncurses"
