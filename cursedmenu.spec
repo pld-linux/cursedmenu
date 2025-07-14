@@ -31,8 +31,8 @@ tekstowych, takich jak telnet, ssh czy rlogin.
 
 %prep
 %setup -q
-%patch0 -p1
-%patch1 -p1
+%patch -P0 -p1
+%patch -P1 -p1
 
 %build
 CPPFLAGS="%{rpmcflags} -I/usr/include/ncurses"
